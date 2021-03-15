@@ -21,7 +21,7 @@ class EMClient {
   static const MethodChannel _channel =
       const MethodChannel('$_channelPrefix/em_client', JSONMethodCodec());
   static EMClient _instance;
-  final EMChatManager _chatManager = EMChatManager();
+  final EMChatManager _chatManager = EMChatManager.instance;
   final EMContactManager _contactManager = EMContactManager();
   final EMChatRoomManager _chatRoomManager = EMChatRoomManager();
   final EMGroupManager _groupManager = EMGroupManager();
